@@ -1,0 +1,140 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    background: rgb(0, 255, 195);
+
+}
+
+.signup {
+
+    display: flex;
+    margin: 60px;
+    background: rgba(0, 229, 255, 0.47);
+    font-family: roboto;
+
+}
+
+.signup .img {
+
+    width: 40%;
+
+}
+
+.signup .img img {
+
+    width: 100%;
+
+}
+
+.container {
+
+    display: grid;
+    width: 40%;
+    margin-left: 68px;
+    text-align: center;
+
+}
+
+.container h1 {
+
+    margin-top: 20px;
+    font-size: 3em;
+    color: rgb(0, 82, 112);
+
+}
+
+.container input {
+
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.container button {
+
+    margin: 20px 0px;
+    padding: 10px;
+    font-size: 20px;
+    background: rgb(0, 82, 112);
+    color: white;
+    transition: 0.5s;
+
+}
+
+.container button:hover {
+
+    cursor: pointer;
+    box-shadow: 0px 5px 20px 0px rgb(0, 111, 148);
+
+}
+
+
+/* responsive */
+
+@media (max-width: 1300px) {
+
+    .signup .img {
+        width: 44%;
+    }
+    .container {
+        display: grid;
+        width: 40%;
+        margin-left: 128px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .signup .img {
+        width: 46%;
+    }
+
+}
+
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+    .signup .img {
+        width: 62%;
+    }
+    .container {
+        display: grid;
+        width: 40%;
+        margin-left: 68px;
+        text-align: center;
+        margin-right: 31px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .signup {
+        flex-direction: column;
+        width: 80%;
+        margin: 4% auto;
+    }
+
+    .signup .img img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .signup .img {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
